@@ -156,8 +156,13 @@ module.exports = {
           // "style" loader turns CSS into JS modules that inject <style> tags.
           // In production, we use a plugin to extract that CSS to a file, but
           // in development "style" loader enables hot editing of CSS.
+          //@auther zhuang
+          // scss 配置
+          // exclude 添加一项  /\.scss$/
+          // webpack.config.dev.js
+          // webpack.config.prod.js 做同样的配置
           {
-            test: /\.css$/,
+            test: /\.(css|scss|sass)$/,
             use: [
               require.resolve('style-loader'),
               {
@@ -186,6 +191,7 @@ module.exports = {
                   ],
                 },
               },
+              "sass-loader"
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.

@@ -165,8 +165,13 @@ module.exports = {
           // tags. If you use code splitting, however, any async bundles will still
           // use the "style" loader inside the async code so CSS from them won't be
           // in the main CSS file.
+          //@auther zhuang
+          // scss 配置
+          // exclude 添加一项  /\.scss$/
+          // webpack.config.dev.js
+          // webpack.config.prod.js 做同样的配置
           {
-            test: /\.css$/,
+            test: /\.(css|scss|sass)$/,
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
@@ -205,6 +210,7 @@ module.exports = {
                         ],
                       },
                     },
+                    "sass-loader"
                   ],
                 },
                 extractTextPluginOptions
