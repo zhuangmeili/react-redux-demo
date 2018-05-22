@@ -1,0 +1,38 @@
+.F12{ font-size: 12px;}
+.F14{ font-size: 14px;}
+.F16{ font-size: 16px;}
+.F18{ font-size: 18px;}
+.F20{ font-size: 20px;}
+.F22{ font-size: 22px;}
+.F24{ font-size: 24px;}
+/*布局 显示 隐藏*/
+.FL{ float: left;}
+.FR{ float: right;}
+.Clear{ clear: both;}
+.Clearfix{zoom:1;}
+.Clearfix::after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.Block{ display: block;}
+.Inline{ display: inline;}
+.InlineB{ display: inline-block;}
+.Show{ display: block;}
+.Hide{ display: none;}
+
+/* flex 布局*/
+.Flex{ display: flex; display: -webkit-flex;}
+.Flex1{ -webkit-box-flex: 1;  -webkit-flex: 1;  flex: 1;}   /* 直接孩子 flex:1 */
+.Flex2{ -webkit-box-flex: 2;  -webkit-flex:2;  flex: 2;}
+.Flex3{ -webkit-box-flex: 3;  -webkit-flex:3;  flex: 3;}
+.Flex4{ -webkit-box-flex: 4;  -webkit-flex:4;  flex: 4;}
+.Flex5{ -webkit-box-flex: 5;  -webkit-flex:5;  flex: 5;}
+.FlexVer{ -webkit-align-items: center;  align-items: center;}  /* 垂直居中 */
+.FlexHor{ justify-content: center;-webkit-justify-content:center; } /*一行居中对齐*/
+.FlexBet{ -webkit-box-pack: justify;  -webkit-justify-content: space-between;  -ms-flex-pack:justify ;  justify-content: space-between;}  /*  两端对齐*/
+.FlexNoWrap{ flex-wrap: nowrap; -webkit-flex-wrap: nowrap;}
+.FlexWrap{ flex-wrap: wrap; -webkit-flex-wrap:wrap;}
+/* 文本修饰 */
+.FB{ font-weight: bold; }
+.TC{ text-align: center;}
+.OneElip{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap;word-break: break-all;text-align: justify-all;} /*超出一行 ...显示*/
+.TwoElip{ overflow:hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-line-clamp: 2;  -webkit-box-orient: vertical;  white-space: normal;word-break: break-all;text-align: justify-all;} /*超过两行 ...显示*/
+.ThrElip{ overflow:hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-line-clamp: 3;  -webkit-box-orient: vertical;  white-space: normal;word-break: break-all;text-align: justify-all;} /*超过三行 ...显示*/
+.HackWidth{ width: 100px;}
