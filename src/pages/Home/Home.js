@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import './Home.scss';
 
+import Counter from '../../containers/Counter';
 // 组件引入
 class Home extends Component {
   render() {
@@ -27,6 +28,8 @@ class Home extends Component {
             <NavLink to="/mine" activeClassName="cur">我的</NavLink>
           </li>
         </ul>
+
+        <Counter/>
       </div>
     );
   }
