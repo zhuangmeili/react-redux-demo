@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import {NavLink} from 'react-router-dom';
-import './HomePage.scss';
+import './Home.scss';
 
 // 组件引入
-class HomePage extends Component {
+class Home extends Component {
   render() {
     return (
-      <div className="homepage_wrap">
+      <div className="home_wrap">
 
         <p className="passage">
           Home pages
@@ -32,4 +32,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default Home;

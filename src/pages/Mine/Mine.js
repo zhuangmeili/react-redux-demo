@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class MinePage extends Component {
+class Mine extends Component {
   render() {
     return (
-      <div className="App">
-        <p className="App-intro">
+      <div className="">
+        <p className="">
           mine pages
         </p>
       </div>
@@ -12,4 +12,4 @@ class MinePage extends Component {
   }
 }
 
-export default MinePage;
+export default Mine;

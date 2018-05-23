@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class BuyPage extends Component {
+class Buy extends Component {
   render() {
     return (
       <div className="App">
@@ -12,4 +12,4 @@ class BuyPage extends Component {
   }
 }
 
-export default BuyPage;
+export default Buy;

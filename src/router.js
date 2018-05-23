@@ -1,23 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
-import About from './pages/About';
-import ListPage from './pages/ListPage';
-import HomePage from "./pages/HomePage/HomePage";
-import BuyPage from "./pages/BuyPage/BuyPage";
-import SupplyPage from "./pages/SupplyPage/SupplyPage";
-import MinePage from "./pages/MinePage/MinePage";
+import Home from "./pages/Home/Home";
+import Buy from "./pages/Buy/Buy";
+// 内嵌路由在 Supply组件中
+import Supply from "./pages/Supply/Supply";
+import Mine from "./pages/Mine/Mine";
 
 
 const router=(
   <Router>
     <Switch>
-      <Route path="/" component={HomePage} exact></Route>
-      <Route path="/about" component={About}></Route>
-      <Route path="/list" component={ListPage}></Route>
-      <Route path="/buy" component={BuyPage}></Route>
-      <Route path="/supply" component={SupplyPage}></Route>
-      <Route path="/mine" component={MinePage}></Route>
+      <Route path="/" component={Home} exact></Route>
+      <Route path="/buy" component={Buy} ></Route>
+      <Route path="/supply" component={Supply}></Route>
+      <Route path="/mine" component={Mine}></Route>
     </Switch>
   </Router>
 );
