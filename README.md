@@ -40,7 +40,7 @@ my-app
     └── registerServiceWorker.js
     └── router.js
 ```
-## reducer组件
+## redux案例
 redux 案例 结合官网与实际项目
 ``` bash
 # Counter组件
