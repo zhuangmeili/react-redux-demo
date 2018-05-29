@@ -1,10 +1,9 @@
 这个项目是基于[Create React App](https://github.com/facebookincubator/create-react-app)创建的.
-## Table of Contents
-- react-create-app常用指令
-  - [yarn start]( or npm start )
-  - [yarn test] ( or npm test )
-  - [yarn build]( or npm run build )
-  - [yarn eject]( or npm run eject )
+## Build Setup
+  - yarn start
+  - yarn test
+  - yarn build
+  - yarn eject
 react-redux-demo/
   README.md
   node_modules/
@@ -30,12 +29,30 @@ my-app
 │   └── index.html
 │   └── manifest.json
 └── src
-    └── App.css
-    └── App.js
-    └── App.test.js
+    └── assets
+    └── components
+    └── containers
+    └── pages
+    └── reducers
+    └── utils
     └── index.css
     └── index.js
-    └── logo.svg
     └── registerServiceWorker.js
+    └── router.js
 ```
+## reducer组件
+redux 案例 结合官网与实际项目
+``` bash
+# Counter组件
+containers/Counter
+
+# Todo组件
+containers/Todo
+
+# 示例
+pages/Home
+
+```
+效果如下：
+![Image text](https://github.com/zhuangmeili/react-redux-demo/blob/master/static/md/todo.gif)
 
