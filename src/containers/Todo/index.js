@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './index.scss';
-import {toggleTodo,addTodo,setTodoFilter,todoAllFilters} from "./todo.reducer";
+import {toggleTodo,addTodo} from './todo.reducer';
+import {setTodoFilter,todoAllFilters} from './todo.filter.reducer';
 
 class Todo extends Component {
   constructor(props){
@@ -49,8 +50,8 @@ const getFilterTodos=(list,filter)=>{
 
 // props 传递的key
 const mapStateToProps = (state) => ({
-  list: getFilterTodos(state.todo.list,state.todo.filter),
-  filter: state.todo.filter
+  list: getFilterTodos(state.todo,state.todoFilter),
+  filter: state.todoFilter
 });
 
 const mapDispatchToProps = (dispatch) => ({
