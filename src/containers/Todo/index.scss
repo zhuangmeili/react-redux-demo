@@ -1,0 +1,37 @@
+.todo_wrap {
+  padding-top: 40px;
+  width: 400px;
+  margin: 0 auto;
+  .todo_add {
+    .input {
+      height: 35px;
+      line-height: 35px;
+      border: 1px solid #ddd;
+      width: 300px;
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+    .button {
+      background: #31a5e0;
+      line-height: 35px;
+      color: #fff;
+      border-radius: 0 2px 2px 0;
+      padding: 0 12px;
+    }
+
+  }
+  .todo_list{
+    li{ line-height: 30px; font-size: 14px;}
+    li.deleted{
+      text-decoration: line-through;
+      color: #f00;}
+  }
+  .todo_filter{
+    margin-top: 12px;
+    font-size: 14px;
+    span{  display: inline-block; padding: 0 12px;
+      &.active{ background: #31a5e0; color: #fff;}
+    }
+  }
+
+}

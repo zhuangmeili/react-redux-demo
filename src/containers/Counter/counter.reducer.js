@@ -2,7 +2,7 @@
  * 每个xxx.reducer.js包含
  *    actions常量
  *    action 函数
- *    state 初始值
+ *    state 初始值 initialState
  *    reducer
  *
  * */
@@ -12,16 +12,12 @@ const DECREMENT='DECREMENT';
 
 
 //action 函数
-export const increment=()=> {
-  return {
-    type:INCREMENT,
-  }
-};
-export const decrement=()=>{
-  return{
-    type:DECREMENT
-  }
-};
+export const increment=()=> ({
+  type:INCREMENT,
+});
+export const decrement=()=>({
+  type:DECREMENT
+});
 
 
 //state 初始值
