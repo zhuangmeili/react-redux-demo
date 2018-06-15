@@ -35,4 +35,5 @@
 .OneElip{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap;word-break: break-all;text-align: justify-all;} /*超出一行 ...显示*/
 .TwoElip{ overflow:hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-line-clamp: 2;  -webkit-box-orient: vertical;  white-space: normal;word-break: break-all;text-align: justify-all;} /*超过两行 ...显示*/
 .ThrElip{ overflow:hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-line-clamp: 3;  -webkit-box-orient: vertical;  white-space: normal;word-break: break-all;text-align: justify-all;} /*超过三行 ...显示*/
-.HackWidth{ width: 100px;}
+.HackWidth{ width: 1rem;}
+
