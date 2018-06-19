@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Buy.scss';
-class Buy extends Component {
+import './index.scss';
+class ComScroll extends Component {
   constructor(props){
     super(props);
     this.state={
-      buyList:[],
+      list:[],
       curPage:1,
       pageSize:10,
       isLoading:false,
@@ -90,39 +90,10 @@ class Buy extends Component {
   render() {
     return (
       <div className="pages_Buy">
-        <ul>
-          {
-            this.state.buyList.length?
-              this.state.buyList.map((item,index)=>{
-                return(
-                <li className="listItem Flex" key={item.id}>
-                  <img className="left" src="http://pic2.ooopic.com/12/42/25/02bOOOPIC95_1024.jpg" alt=""/>
-                  <div className="right Flex1 HackWidth">
-                    <h2>{item.title}--{item.id}</h2>
-                    <p> {item.text} </p>
-                  </div>
-                </li>)
-              })
-              :
-              ''
-          }
 
-        </ul>
-        {
-          this.state.isLoading?
-            <div className="loading">加载中...</div>
-            :
-            ''
-        }
-        {
-          this.state.isToEnd?
-            <div className="toEnd">已经到底了</div>
-            :
-            ''
-        }
       </div>
     );
   }
 }
 
-export default Buy;
+export default ComScroll;
