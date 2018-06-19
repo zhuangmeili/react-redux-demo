@@ -31,7 +31,6 @@ my-app
 └── src
     └── assets
     └── components
-    └── containers
     └── pages
     └── reducers
     └── utils
@@ -44,10 +43,10 @@ my-app
 redux 案例 结合官网与实际项目
 ``` bash
 # Counter组件
-containers/Counter
+components/Counter
 
 # Todo组件
-containers/Todo
+components/Todo
 
 # 示例
 pages/Home
@@ -55,4 +54,23 @@ pages/Home
 ```
 效果如下：
 ![Image text](https://github.com/zhuangmeili/react-redux-demo/blob/master/static/md/todo.gif)
+
+
+## 常用移动端组件封装
+``` bash
+# ComScroll - 无限滚动分页
+components/ComScroll
+
+
+使用方法
+<ComScroll loadMore={this.getNextPage}  distance={distance}>
+  {/*chlidren*/}
+</ComScroll>
+
+# 示例
+pages/BuyList
+
+```
+效果如下：
+![Image text](https://github.com/zhuangmeili/react-redux-demo/blob/master/static/md/scroll.gif)
 
