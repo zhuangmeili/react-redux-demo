@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import './Home.scss';
 
-import Counter from '../../containers/Counter';
-import Todo from '../../containers/Todo';
+import Counter from '../../components/Counter';
+import Todo from '../../components/Todo';
 // 组件引入
 class Home extends Component {
   render() {
