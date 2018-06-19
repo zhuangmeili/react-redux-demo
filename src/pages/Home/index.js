@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {NavLink} from 'react-router-dom';
-import './Home.scss';
+import './index.scss';
 
 import Counter from '../../components/Counter';
 import Todo from '../../components/Todo';
@@ -9,12 +9,7 @@ import Todo from '../../components/Todo';
 class Home extends Component {
   render() {
     return (
-      <div className="home_wrap">
-
-        <p className="passage">
-          Home pages
-        </p>
-
+      <div className="pages_Home">
         <ul className="footer ">
           <li className="item ">
             <NavLink to="/" activeClassName="cur">首页</NavLink>
@@ -24,6 +19,12 @@ class Home extends Component {
           </li>
           <li className="item ">
             <NavLink to="/buy" activeClassName="cur">采购</NavLink>
+          </li>
+          <li className="item ">
+            <NavLink to="/buy/detail" activeClassName="cur">采购 - 详情</NavLink>
+          </li>
+          <li className="item ">
+            <NavLink to="/buy/list" activeClassName="cur">采购 - 列表</NavLink>
           </li>
           <li className="item ">
             <NavLink to="/mine" activeClassName="cur">我的</NavLink>

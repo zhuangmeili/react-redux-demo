@@ -1,14 +1,15 @@
-.home_wrap{
+.pages_Home{
   .passage{}
   .footer{
     color: #eee;
     .item a{
       display: block;
-      height: 40px;
-      line-height: 40px;
+      height: 2rem;
+      line-height: 2rem;
       text-align: center;
       border-bottom: 1px solid #ddd;
       color: #333;
+      font-size: 0.8rem;
       &.cur{ text-decoration: underline; color: #f60;}
     }
 

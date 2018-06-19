@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './SupplyList.scss'
+import './index.scss'
 class SupplyList extends Component {
   render() {
     return (
-      <div className="supplyList_wrap">
+      <div className="pages_SupplyList">
         <header className="header">list  pages</header>
         <ul>
           <li>item1</li>

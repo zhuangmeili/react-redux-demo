@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Buy.scss';
+import './index.scss';
 class Buy extends Component {
   constructor(props){
     super(props);

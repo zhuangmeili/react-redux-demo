@@ -4,14 +4,14 @@ import {Link,Switch,Route} from 'react-router-dom';
 
 
 
-import SupplyList from "../SupplyList/SupplyList";
-import SupplyDetail from "../SupplyDetail/SupplyDetail";
-import './Supply.scss';
+import SupplyList from "../SupplyList";
+import SupplyDetail from "../SupplyDetail";
+import './index.scss';
 
 class Supply extends Component {
   render() {
     return (
-      <div className="supply_wrap">
+      <div className="pages_Supply">
         <header className="header">供应页面</header>
 
         <div className="linkList">
@@ -21,8 +21,8 @@ class Supply extends Component {
 
         <div className="">
           <Switch>
-            <Route path="/supply/detail" component={SupplyDetail}/>
-            <Route path="/supply/list" component={SupplyList}/>
+            <Route path="/supply/detail" component={SupplyList}/>
+            <Route path="/supply/list" component={SupplyDetail}/>
           </Switch>
         </div>
 

@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-
+import './index.scss';
 class Mine extends Component {
-  render() {
+  render(){
     return (
-      <div className="">
-        <p className="">
-          mine pages
-        </p>
+      <div>
+        Mine page
       </div>
-    );
+    )
   }
 }
 
