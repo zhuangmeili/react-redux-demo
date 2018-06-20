@@ -21,10 +21,10 @@ class Home extends Component {
             <NavLink to="/buy" activeClassName="cur">采购</NavLink>
           </li>
           <li className="item ">
-            <NavLink to="/buy/detail" activeClassName="cur">采购 - 详情</NavLink>
+            <NavLink to="/buy/list" activeClassName="cur">采购 - 列表</NavLink>
           </li>
           <li className="item ">
-            <NavLink to="/buy/list" activeClassName="cur">采购 - 列表</NavLink>
+            <NavLink to="/buy/detail" activeClassName="cur">采购 - 详情</NavLink>
           </li>
           <li className="item ">
             <NavLink to="/mine" activeClassName="cur">我的</NavLink>

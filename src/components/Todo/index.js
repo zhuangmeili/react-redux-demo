@@ -5,9 +5,6 @@ import {toggleTodo,addTodo} from './todo.reducer';
 import {setTodoFilter,todoAllFilters} from './todo.filter.reducer';
 
 class Todo extends Component {
-  constructor(props){
-    super(props);
-  }
   render() {
     const { list,filter,onAddTodo,onToggle,onChangeFilter}=this.props;
     return (

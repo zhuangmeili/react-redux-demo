@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss';
 import ComScroll from '../../components/ComScroll';
+
 class BuyList extends Component {
   constructor(props){
     super(props);
@@ -16,7 +17,7 @@ class BuyList extends Component {
   componentWillMount(){
     this.getPage();
   }
-  getPage=()=>{
+  getPage(){
 
     let {curPage,pageSize,buyList}=this.state;
     let start=(curPage-1)*pageSize;
@@ -43,9 +44,9 @@ class BuyList extends Component {
         isLoading:false
       })
     },1000);
-  };
+  }
 
-  getNextPage=()=>{
+  getNextPage(){
     let {curPage,isToEnd,isLoading}=this.state;
     if(isToEnd){
       return;
@@ -58,21 +59,27 @@ class BuyList extends Component {
         this.getPage();
       })
     }
+  }
 
-  };
+  toDetail(id){
+    this.props.history.push({
+      pathname:'/buy/detail',
+      search:`?buyId=${id}`
+    })
+  }
   render() {
     let {distance}=this.state;
     return (
       <div className="pages_BuyList">
         <ComScroll
-          loadMore={this.getNextPage}
+          loadMore={this.getNextPage.bind(this)}
           distance={distance}>
           <ul>
             {
               this.state.buyList.length?
                 this.state.buyList.map(item=>{
                   return(
-                    <li className="listItem Flex" key={item.id}>
+                    <li className="listItem Flex" key={item.id} onClick={this.toDetail.bind(this,item.id)}>
                       <img className="left" src="http://pic2.ooopic.com/12/42/25/02bOOOPIC95_1024.jpg" alt=""/>
                       <div className="right Flex1 HackWidth">
                         <h2>{item.title}-{item.id}</h2>

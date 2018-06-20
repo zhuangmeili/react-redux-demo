@@ -4,9 +4,6 @@ import './index.scss';
 import {increment,decrement} from "./counter.reducer";
 
 class Counter extends Component {
-  constructor(props){
-    super(props);
-  }
   render() {
     const { counter,onIncrement,onDecrement}=this.props;
     return (
