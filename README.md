@@ -62,7 +62,7 @@ pages/Home
 components/ComScroll
 
 
-使用方法
+# 使用方法
 <ComScroll loadMore={this.getNextPage}  distance={distance}>
   {/*chlidren*/}
 </ComScroll>
@@ -71,6 +71,4 @@ components/ComScroll
 pages/BuyList
 
 ```
-效果如下：
-![Image text](https://github.com/zhuangmeili/react-redux-demo/blob/master/static/md/scroll.gif)
 
