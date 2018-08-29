@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss';
+
+import PasswordPopup from '../../components/PasswordPopup'
 class Buy extends Component {
   constructor(props){
     super(props);
@@ -11,12 +13,11 @@ class Buy extends Component {
 
   }
 
-
-
   render() {
     return (
-      <div className="pages_Buy">
-        Buy page
+      <div className="page_buy Flex FlexVer FlexHor">
+        <button type="button"> 点击出现弹窗</button>
+        <PasswordPopup></PasswordPopup>
       </div>
     );
   }
